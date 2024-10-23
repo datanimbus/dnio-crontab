@@ -1,0 +1,35 @@
+{
+  "name": "dnio-crontab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jugnu Agrawal",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "log4js": "^6.9.1",
+    "node-cron": "^3.0.3",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.13.0",
+    "pkg": "^5.8.1"
+  },
+  "bin": {
+    "dnio-crontab": "./index.js"
+  },
+  "pkg": {
+    "outputPath": "dist",
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64",
+      "node18-win-x64"
+    ],
+    "options": [
+      "node_modules/node-cron/**/*"
+    ]
+  }
+}
